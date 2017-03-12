@@ -243,7 +243,7 @@ class Result
             return $text;
         }
 
-        return (string)preg_replace('/(' . preg_quote($this->query, '/') . ')/i', '<mark>$0</mark>', $text);
+        return (string)preg_replace('/(' . preg_quote($this->query, '/') . ')/iu', '<mark>$0</mark>', $text);
     }
 
 
